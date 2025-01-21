@@ -1,6 +1,8 @@
 # mitec-to-ics.py
 Herramienta *web-scraper* para exportar tu horario como aparece en MiTec a un archivo iCal (para ser utilizado en calcurse, Google Calendar, iCloud Calendar, etc.) 
 
+![screenshot-012125-160946](https://github.com/user-attachments/assets/d6a4da43-0c64-4fc3-9501-b696d57aeaa4)
+
 ## Sobre este proyecto
 Consiste en un *script* de Python que recopila la información de todas las materias actualmente inscritas en MiTec para depositarlas en un archivo .ics. Por predeterminado se utiliza el navegador Firefox con geckodriver y se exporta la información a un archivo llamado 'calendario.ics'. Estas tres variables pueden ser modificadas, y también por predeterminado el *script* intentará utilizar Chrome si no detecta a Firefox. 
 
@@ -37,3 +39,6 @@ python mitec-to-ics.py calendario-fj25.ics
 python mitec-to-ics.py --driver chrome calendario-fj25.ics
 python mitec-to-ics.py --driver chrome --binary-location=/usr/bin/chromium calendario-fj25.ics
 ```
+
+## Fun fact
+Además, puedes añadir tu calendario de Canvas a tu calendario personal. Ve al calendario y a la derecha debe aparecer 'Calendar Feed'. Descarga el archivo o bien usa la liga e impórtalo en tu cliente de calendario preferido.
