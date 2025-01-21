@@ -11,11 +11,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-parser = argparse.ArgumentParser("python calendario-mitec.py")
-parser.add_argument('outfile', nargs='?', const='arg_was_not_given', help='output file, in ics format [default: calendario.ics]', default="calendario.ics")
-parser.add_argument('--driver', help='driver to be used', metavar='[gecko (default), chrome]', default='gecko')
-parser.add_argument('--binary-location', help='path to browser (e.g. librewolf)', metavar='VALUE', default='')
-parser.add_argument('--service-executable', help='path to gecko/chrome (requires --binary-location for gecko)', metavar='VALUE', default='')
+parser = argparse.ArgumentParser("python mitec-to-ics.py")
+parser.add_argument('outfile', nargs='?', const='arg_was_not_given', help='output file, en formato ics [default: calendario.ics]', default="calendario.ics")
+parser.add_argument('--driver', help='driver a utilizar', metavar='[gecko (default), chrome]', default='gecko')
+parser.add_argument('--binary-location', help='path a un navegador (e.g. librewolf)', metavar='VALUE', default='')
+parser.add_argument('--service-executable', help='path a gecko/chrome (requiere --binary-location con gecko)', metavar='VALUE', default='')
 args = parser.parse_args()
 
 def convert_abrev_dias(dias):
@@ -124,4 +124,4 @@ driver.quit()
 with open(args.outfile, "wb") as f:
     f.write(cal.to_ical())
 
-print(f"Saved to {args.outfile}")
+print(f"Información exportada a {args.outfile}")
