@@ -16,24 +16,24 @@ pip install -r requirements.txt # o en Arch, yay -S python-selenium python-icale
 ## Uso
 ```
 usage: python mitec-to-ics.py [-h] [--driver [gecko (default), chrome]] [--binary-location VALUE] [--service-executable VALUE]
-                                  [outfile]
+                              [outfile]
 
 positional arguments:
-  outfile               output file, in ics format [default: calendario.ics]
+  outfile               output file, en formato ics [default: calendario.ics]
 
 options:
   -h, --help            show this help message and exit
   --driver [gecko (default), chrome]
-                        driver to be used
+                        driver a utilizar
   --binary-location VALUE
-                        path to browser (e.g. librewolf)
+                        path a un navegador (e.g. librewolf)
   --service-executable VALUE
-                        path to gecko/chrome (requires --binary-location for gecko)
+                        path a gecko/chrome (requiere --binary-location con gecko)
 ```
 
 ### Ejemplos
 ```
 python mitec-to-ics.py calendario-fj25.ics 
 python mitec-to-ics.py --driver chrome calendario-fj25.ics
-python mitec-to-ics.py --driver chrome --binary-location=/usr/bin/brave calendario-fj25.ics
+python mitec-to-ics.py --driver chrome --binary-location=/usr/bin/chromium calendario-fj25.ics
 ```
