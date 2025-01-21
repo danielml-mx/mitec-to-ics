@@ -1,10 +1,10 @@
 # mitec-to-ics.py
-Herramienta web-scraper para exportar tu horario como aparece en MiTec a un archivo iCal (para ser utilizado en calcurse, Google Calendar, iCloud Calendar, etc.) 
+Herramienta *web-scraper* para exportar tu horario como aparece en MiTec a un archivo iCal (para ser utilizado en calcurse, Google Calendar, iCloud Calendar, etc.) 
 
 ## Sobre este proyecto
-Consiste en un script de Python que recopila la información de todas las materias actualmente inscritas en MiTec para depositarlas en un archivo .ics. Por predeterminado, utiliza el navegador Firefox con geckodriver para viajar a MiTec y lo guarda en un archivo llamado 'calendario.ics'. Estas tres variables pueden ser modificadas, y también por predeterminado el script intentará utilizar Chrome si no detecta a Firefox. 
+Consiste en un *script* de Python que recopila la información de todas las materias actualmente inscritas en MiTec para depositarlas en un archivo .ics. Por predeterminado se utiliza el navegador Firefox con geckodriver y se exporta la información a un archivo llamado 'calendario.ics'. Estas tres variables pueden ser modificadas, y también por predeterminado el *script* intentará utilizar Chrome si no detecta a Firefox. 
 
-Cabe destacar que este script necesita intervención de usuario para ingresar las credenciales para aceder a MiTec. Una vez que el sito haya sido cargado, el navegador esperará hasta que las credenciales (usuario, contraseña y código OTP) sean ingresadas y que MiTec sea propiamiente accesado.
+Cabe destacar que este *script* necesita de intervención de usuario para ingresar las credenciales para acceder a MiTec. Una vez que el sito haya sido cargado, el navegador esperará hasta que las credenciales (usuario, contraseña y código OTP) sean ingresadas y que MiTec sea propiamiente accesado.
 
 ## Instalación
 ```
@@ -31,7 +31,7 @@ options:
                         path to gecko/chrome (requires --binary-location for gecko)
 ```
 
-### Ejemplo
+### Ejemplos
 ```
 python mitec-to-ics.py calendario-fj25.ics 
 python mitec-to-ics.py --driver chrome calendario-fj25.ics
