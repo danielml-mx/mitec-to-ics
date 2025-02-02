@@ -1,7 +1,7 @@
 # mitec-to-ics.py
 Herramienta *web-scraper* para exportar tu horario como aparece en MiTec a un archivo iCal (para ser utilizado en calcurse, Google Calendar, iCloud Calendar, etc.) 
 
-![screenshot-012125-160946](https://github.com/user-attachments/assets/d6a4da43-0c64-4fc3-9501-b696d57aeaa4)
+![image](https://github.com/user-attachments/assets/38ee6965-3c64-4a51-a160-477215ecd11b)
 
 ## Sobre este proyecto
 Consiste en un *script* de Python que recopila la información de todas las materias actualmente inscritas en MiTec para depositarlas en un archivo .ics. Por predeterminado se utiliza el navegador Firefox con geckodriver y se exporta la información a un archivo llamado 'calendario.ics'. Estas tres variables pueden ser modificadas, y también por predeterminado el *script* intentará utilizar Chrome si no detecta a Firefox. 
@@ -18,6 +18,7 @@ pip install -r requirements.txt # o en Arch, yay -S python-selenium python-icale
 ## Uso
 ```
 usage: python mitec-to-ics.py [-h] [--driver [gecko (default), chrome]] [--binary-location VALUE] [--service-executable VALUE]
+                              [--preguntar-por-periodo]
                               [outfile]
 
 positional arguments:
@@ -31,6 +32,8 @@ options:
                         path a un navegador (e.g. librewolf)
   --service-executable VALUE
                         path a gecko/chrome (requiere --binary-location con gecko)
+  --preguntar-por-periodo
+                        pregunta por periodo a exportar en lugar de exportar el más reciente
 ```
 
 ### Ejemplos
