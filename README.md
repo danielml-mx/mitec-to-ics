@@ -1,5 +1,5 @@
 # mitec-to-ics.py
-Herramienta *web-scraper* para exportar tu horario como aparece en MiTec a un archivo iCal (para ser utilizado en calcurse, Google Calendar, iCloud Calendar, etc.) 
+Herramienta *web-scraper* para exportar tu horario como aparece en la plataforma institucional del Tecnológico de Monterrey a un archivo iCal (para ser utilizado en calcurse, Google Calendar, iCloud Calendar, etc.) 
 
 ![image](https://github.com/user-attachments/assets/38ee6965-3c64-4a51-a160-477215ecd11b)
 
